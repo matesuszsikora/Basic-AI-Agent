@@ -10,6 +10,10 @@ Baza wektorowa: ChromaDB
 
 Zewnętrzne API: WeatherAPI, Wikipedia API
 
+
+
+
+
 Część 1: Agent z wykorzystaniem narzędzi (Tool Calling)
 W tej sekcji zbudowano wielozadaniowego agenta, który potrafi korzystać z zewnętrznych funkcji. Główne wyzwania i zaimplementowane rozwiązania obejmują:
 
@@ -25,6 +29,10 @@ Guardrails (Bezpieczeństwo i ograniczenia): * Agent odmawia odpowiedzi na temat
 
 Wprowadzono geolokalizacyjny "twardy limit" – agent podaje pogodę wyłącznie dla miast znajdujących się w Polsce.
 
+
+
+
+
 Część 2: Agent RAG (Retrieval-Augmented Generation)
 W tej sekcji zaimplementowano własny system RAG, który zasila model zewnętrzną bazą wiedzy:
 
@@ -33,6 +41,10 @@ Wektoryzacja danych: Automatyczne pobranie artykułu o Układzie Słonecznym z W
 Wyszukiwarka semantyczna: Zbudowanie narzędzia query, które odpytuje bazę Chroma i zwraca 3 najbardziej podobne fragmenty do zapytania użytkownika.
 
 Kontrola halucynacji (Test Melmac): Eksperymentalne wstrzyknięcie fałszywej informacji do bazy wektorowej ("W 2025 odkryto planetę Melmac..."). Odpowiednia modyfikacja instrukcji systemowych (System Prompt) zmusiła agenta do zignorowania swojej bazowej wiedzy i opierania się wyłącznie na dostarczonym, zmanipulowanym kontekście.
+
+
+
+
 
 Jak uruchomić?
 Aby poprawnie uruchomić notatnik, musisz zdefiniować w swoim środowisku dwa klucze API:
